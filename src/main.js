@@ -64,7 +64,6 @@ keyboard.forEach(button => {
             }
             else {
                 if(calc == '02/12/2021' && nick.textContent == 'Love') {
-                    console.log('entrou!!!')
                     screen.value = 'Eu te amo muitooo, chuchuuu <3'
                 }
                 else {
