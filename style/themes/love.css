@@ -16,6 +16,7 @@ input[type = 'text'].t1 {
     background: #ff6464;
     color: #ffffff;
     font-size: 2.5rem;
+    border-radius: 15px;
     font-family: 'Freehand', cursive;
 }
 
@@ -24,7 +25,7 @@ input[type = 'text'].t1 {
 input[type = 'range'].t1 {
     background: #ff6464;
     border-radius: 10px;
-    border: 2px solid #000000;
+    border: 2px solid #212040;
 }
 
 /* cor do botão da barra de tema */
