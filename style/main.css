@@ -1,11 +1,21 @@
+/* importando rezetes */
 @import url('normalize.css');
 @import url('reset.css');
+
+/* importando temas */
+@import url('tlove.css');
+
+
+/* importando fonte */
 @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
 
+
+/* padronizando fonte */
 :root {
     font-family: 'Quantico', sans-serif;
 }
 
+/* definindo para que seja do tamanho do  dispositivo */
 body {
     display: flex;
     align-items: center;
@@ -14,6 +24,8 @@ body {
     background: #1e1e1e;
 }
 
+
+/* posicionamento dos elementos na calculadora */
 .calculator {
     width: 90%;
     height: 90%;
@@ -21,8 +33,9 @@ body {
     display: grid;
     gap: 1%;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(7,1fr);
-    grid-template-areas: 'sc  sc   sc  sc'
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas: 'bt   bt    t    t'
+                         'sc  sc   sc  sc'
                          'sc  sc   sc  sc'
                          'ca  c    div mul'
                          'b7  b8   b9  sub'
@@ -32,7 +45,7 @@ body {
 }
 
 
-
+/* propriedades da tela */
 .screen {
     grid-area: sc;
     appearance: none;
@@ -50,9 +63,31 @@ body {
 
 
 
+/* propriedades botão tema */
+.theme {
+    width: 70%;
+    grid-area: bt;
+    justify-self: center;
+    align-self: center;
+    appearance: none;
+    background: #7a7a7a;
+    border-radius: 10px;
+    border: 2px solid #000000;
+
+}
+
+.theme::-webkit-slider-thumb {
+    appearance: none;
+    width: 50%;
+    height: 20px;
+    background: #dadada;
+    border-radius: 10px;
+}
 
 
 
+
+/* propriedades dos botoes */
 button {
     font-size: clamp(1.5rem,5vw,2rem);
     padding: 0;
@@ -61,12 +96,41 @@ button {
     border: 2px solid #000000;
     background-color: #7a7a7a;
     border-radius: 5px;
+    position: relative;
+    box-shadow: 0 3px #000000;
+    transition: all .1s ease-in-out;
 }
 
+button:hover {
+    background: #474747;
+}
+
+button:active {
+    top: 5px;
+    box-shadow: none;
+}
+
+
+
+/* propriedades da img "Clear" */
 button img {
-    width: 8vw;
-    min-width: 30px;
-    max-width: 50px;
+    width: 50%;
+    min-width: 2rem;
+    position: absolute;
+    max-width: 3rem;
+    align-self: center;
+}
+
+
+
+
+/* posicionamento de cada elemento */
+h1 {
+    grid-area: t;
+    color: #dadada;
+    justify-self: center;
+    align-self: center;
+    font-size: clamp(2rem,8vw,3rem);
 }
 
 button[value=ca] {
@@ -75,6 +139,8 @@ button[value=ca] {
 
 button[value=c] {
     grid-area: c;
+    display: flex;
+    justify-content: center;
 }
 
 button[value='9'] {
@@ -119,7 +185,11 @@ button[value='0'] {
 
 button[value='='] {
     grid-area: equ;
-    background-color: #d82222;
+    background: #d82222;
+}
+
+button[value='=']:hover {
+    background: #a81a1a;
 }
 
 button[value='+'] {
