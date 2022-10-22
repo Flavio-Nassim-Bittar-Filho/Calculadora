@@ -1,50 +1,48 @@
-// captura da pagina toda
+// elementos da calculadora (Não Mexer)
 const body = document.querySelector('body')
-
-// Nome do tema
 const nick = document.querySelector('h1')
-
-// captura todos os botões da calculadora
 const keyboard = document.querySelectorAll('button')
-
-// captura a tela 
 const screen = document.querySelector('.screen')
-
-// captura o botão de tema
 const theme = document.querySelector('.theme')
 
 
-// logica para troca de Tema
+// Lista de Temas -> coloque o seu tema dentro de uma lista,
+// sendo o primeiro parametro a classe definida no seu arquivo CSS, e o segundo o nome do tema ['classe', 'nome-tema']
+const themes = [
+    ['t0', 'Default'],
+    ['t1', 'Love']
+]
+
+// define o maximo de temas (Não Mexer)
+theme.max = themes.length - 1 
+
+
+// logica para trocar de Tema (Não Mexer)
 theme.addEventListener('change', () => {
 
-    switch (theme.value) {
-        case '1':
-            keyboard.forEach(button => button.classList.add('t1'))
-            body.classList.add('t1')
-            screen.classList.add('t1')
-            theme.classList.add('t1')
-            nick.textContent = 'Love'
-            nick.classList.add('t1')
-            break;
+    for(let i in themes) {
+        if(theme.value == i) {
+            body.classList.add(themes[i][0])
+            screen.classList.add(themes[i][0])
+            theme.classList.add(themes[i][0])
+            nick.textContent = themes[i][1]
+            nick.classList.add(themes[i][0])
+            keyboard.forEach(button => button.classList.add(themes[i][0]))
+        }
+        else {
+            body.classList.remove(themes[i][0])
+            screen.classList.remove(themes[i][0])
+            theme.classList.remove(themes[i][0])
+            nick.classList.remove(themes[i][0])
+            keyboard.forEach(button => button.classList.remove(themes[i][0]))
+        }
     
-        default:
-            keyboard.forEach(button => button.classList.remove('t1'))
-            body.classList.remove('t1')
-            screen.classList.remove('t1')
-            theme.classList.remove('t1')
-            nick.textContent = 'Default'
-            nick.classList.remove('t1')
-            break;
-
     }
 
 })
 
 
-
-
-
-// logica de calculo 
+// logica para efetuar o calculo (Não Mexer)
 const special = ['=', 'ca', 'c']
 let calc = ''
 

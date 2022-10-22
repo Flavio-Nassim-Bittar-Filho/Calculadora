@@ -1,0 +1,76 @@
+/* AUTOR: FLÁVIO NASSIM BITTAR FILHO */
+
+/* importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
+
+/* cor de fundo da calculadora */
+body.t1 {
+    background: #393084;
+}
+
+
+/* cor da tela de equação */
+input[type = 'text'].t1 {
+    border: 2px solid #212040;
+    background: #ff6464;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: 'Freehand', cursive;
+}
+
+
+/* cor de fundo da barra de tema */
+input[type = 'range'].t1 {
+    background: #ff6464;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+/* cor do botão da barra de tema */
+input[type = 'range'].t1::-webkit-slider-thumb {
+    background: #8c84b6;
+    border-radius: 10px;
+}
+
+
+/* cor dos botoes */
+button.t1 {
+    font-family: 'Freehand', cursive;
+    color: #ffffff;
+    border: 2px solid #212040;
+    background-color: #8b85b4;
+    border-radius: 5px;
+    box-shadow: 0 3px #212040;
+}
+
+button.t1:hover {
+    background: #5e5690;
+}
+
+
+/* cor do titulo */
+h1.t1 {
+    font-family: 'Freehand', cursive;
+    color: #ff6464;
+}
+
+
+/* cor expecifica para botoes especificos */
+button[value=c].t1 {
+    background: #8b85b4 url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value=c].t1:hover {
+    background: #5e5690 url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value='='].t1 {
+    background: #ff6464;
+}
+
+button[value='='].t1:hover {
+    background: #d34646;
+}

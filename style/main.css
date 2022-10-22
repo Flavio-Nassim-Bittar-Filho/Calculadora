@@ -2,26 +2,17 @@
 @import url('normalize.css');
 @import url('reset.css');
 
-/* importando temas */
-@import url('tlove.css');
+/* importando temas -> crie um @import com a referencia do seu arquivo css @import url('themes/seu_arquivo.css') */
+@import url('themes/defult.css');
+@import url('themes/love.css');
 
 
-/* importando fonte */
-@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
-
-
-/* padronizando fonte */
-:root {
-    font-family: 'Quantico', sans-serif;
-}
-
-/* definindo para que seja do tamanho do  dispositivo */
+/* definindo centralização da calculadora conforme o display */
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: #1e1e1e;
 }
 
 
@@ -49,18 +40,14 @@ body {
 .screen {
     grid-area: sc;
     appearance: none;
-    border: 2px solid #000000;
-    background: #61ac52;
     cursor: unset;
     text-align: end;
     font-size: clamp(2.5rem,10vw,3rem);
-    border-radius: 15px;
 }
 
 .screen:focus {
     outline: none;
 }
-
 
 
 /* propriedades botão tema */
@@ -70,21 +57,13 @@ body {
     justify-self: center;
     align-self: center;
     appearance: none;
-    background: #7a7a7a;
-    border-radius: 10px;
-    border: 2px solid #000000;
-
 }
 
 .theme::-webkit-slider-thumb {
     appearance: none;
     width: 50%;
     height: 20px;
-    background: #dadada;
-    border-radius: 10px;
 }
-
-
 
 
 /* propriedades dos botoes */
@@ -92,17 +71,8 @@ button {
     font-size: clamp(1.5rem,5vw,2rem);
     padding: 0;
     appearance: none;
-    color: #ffffff;
-    border: 2px solid #000000;
-    background-color: #7a7a7a;
-    border-radius: 5px;
     position: relative;
-    box-shadow: 0 3px #000000;
     transition: all .1s ease-in-out;
-}
-
-button:hover {
-    background: #474747;
 }
 
 button:active {
@@ -110,37 +80,22 @@ button:active {
     box-shadow: none;
 }
 
-
-
-/* propriedades da img "Clear" */
-button img {
-    width: 50%;
-    min-width: 2rem;
-    position: absolute;
-    max-width: 3rem;
-    align-self: center;
-}
-
-
-
-
-/* posicionamento de cada elemento */
+/* propriedade do titulo */
 h1 {
     grid-area: t;
-    color: #dadada;
     justify-self: center;
     align-self: center;
     font-size: clamp(2rem,8vw,3rem);
 }
 
+
+/* posicionamento de cada botão */
 button[value=ca] {
     grid-area: ca;
 }
 
 button[value=c] {
     grid-area: c;
-    display: flex;
-    justify-content: center;
 }
 
 button[value='9'] {
@@ -185,11 +140,6 @@ button[value='0'] {
 
 button[value='='] {
     grid-area: equ;
-    background: #d82222;
-}
-
-button[value='=']:hover {
-    background: #a81a1a;
 }
 
 button[value='+'] {
