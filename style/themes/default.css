@@ -62,7 +62,7 @@ h1.t0 {
 
 
 /* cor expecifica para botoes especificos */
-button[value=c] {
+button[value=c].t0 {
     background: #7a7a7a url('../../img/arrow_back.svg') center center no-repeat;
     background-size: 40%;
 }
@@ -72,10 +72,10 @@ button[value=c].t0:hover {
     background-size: 40%;
 }
 
-button[value='='] {
+button[value='='].t0 {
     background: #d82222;
 }
 
-button[value='=']:hover {
+button[value='='].t0:hover {
     background: #a81a1a;
 }
