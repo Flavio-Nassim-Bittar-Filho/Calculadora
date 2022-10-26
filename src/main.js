@@ -10,7 +10,8 @@ const theme = document.querySelector('.theme')
 // sendo o primeiro parametro a classe definida no seu arquivo CSS, e o segundo o nome do tema ['classe', 'nome-tema']
 const themes = [
     ['t0', 'Default'],
-    ['t1', 'Love']
+    ['t1', 'Love'],
+    ['t2', 'Christmas 🎅']
 ]
 
 // define o maximo de temas (Não Mexer)
