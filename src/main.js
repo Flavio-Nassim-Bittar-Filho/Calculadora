@@ -11,7 +11,7 @@ const theme = document.querySelector('.theme')
 const themes = [
     ['t0', 'Default'],
     ['t1', 'Love'],
-    ['t2', 'Christmas 🎅']
+    ['t2', 'Christmas 🎅'],
     ['t3', 'Classic']
 ]
 
