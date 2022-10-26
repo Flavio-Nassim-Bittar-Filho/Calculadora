@@ -12,6 +12,7 @@ const themes = [
     ['t0', 'Default'],
     ['t1', 'Love'],
     ['t2', 'Christmas 🎅']
+    ['t3', 'Classic']
 ]
 
 // define o maximo de temas (Não Mexer)

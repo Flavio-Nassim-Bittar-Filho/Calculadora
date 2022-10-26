@@ -1,0 +1,96 @@
+/*******************************************************************************
+** Para criar um novo Tema:                                                   **
+** 1- Copie este documento.                                                   **
+** 2- Altere o nome das classes e suas propriedades.                          **
+**     O nome da classe deve manter o padrão t1, t2, t3 ... tn                **
+**     t0 é representado pelo tema DEFAULT                                    **
+** Caso deseje, pode colocar o AUTOR do tema!                                 **
+*******************************************************************************/
+
+/**************************************************
+** TEMA: t3_classic                              **
+** AUTOR: Rafael Abreu Fonseca                   **
+** GITHUB: https://github.com/Rafael-Fonseca     **
+**************************************************/
+
+/* importando fonte */
+@import url('https://fonts.google.com/download?family=Montserrat');
+
+
+/* cor de fundo da calculadora */
+body.t3 {
+    background: #f2f2fc;
+}
+
+
+/* cor da tela de equação */
+input[type = 'text'].t3 {
+    border: 2px solid #000000;
+    background: #6aaae6;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* cor de fundo da barra de tema */
+input[type = 'range'].t3 {
+    background: #7a7a7a;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+/* cor do botão da barra de tema */
+input[type = 'range'].t3::-webkit-slider-thumb {
+    background: #dadada;
+    border-radius: 10px;
+}
+
+
+/* cor dos botoes */
+button.t3 {
+    color: #ffffff;
+    border: 2px solid #000000;
+    background-color: #7a7a7a;
+    box-shadow: 0 3px #000000;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif
+}
+
+button.t3:hover {
+    background: #474747;
+}
+
+
+/* cor do titulo */
+h1.t3 {
+    color: #dadada;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* cor expecifica para botoes especificos */
+button[value=c].t3 {
+    background: #7a7a7a url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value=c].t3:hover {
+    background: #474747 url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value='ca'].t3{
+    background: #d82222;
+}
+
+button[value='ca'].t3:hover {
+    background: #a81a1a;
+}
+
+button[value='='].t3 {
+    background: #2c0eb4;
+}
+
+button[value='='].t3:hover {
+    background: #210c83;
+}
