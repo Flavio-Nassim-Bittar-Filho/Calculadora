@@ -6,7 +6,7 @@
     <ul>
         <li>soma</li>
         <li>subtração</li>
-        <li>mutiplicação</li>
+        <li>multiplicação</li>
         <li>divisão</li>
     </ul>
     Além de ter um botão temático onde é possível trocar o tema da calculadora.
@@ -16,7 +16,7 @@
 <p>
     <ol>
         <li>
-            entre na pasta de temas, 'style/themes' e copie o tema 'default.css'
+            Entre na pasta de temas, 'style/themes' e copie o tema 'default.css'
         </li><br>
         <li>
             No arquivo copiado, troque as classes 't0' de cada elemento por 'tn', onde 'n' é o número de temas existentes.<br>
@@ -36,5 +36,7 @@
 
 <h2>Colaboradores !!!</h2>
 <ul>
-    <li>Ninguém até o momento ...</li>
+    <li>Flávio Nassim Bittar Filho</li>
+    <li>Rafael Augusto De Paula Mora</li>
+    <li>Rafael Abreu Fonseca</li>
 </ul>
