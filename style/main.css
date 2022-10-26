@@ -5,6 +5,7 @@
 /* importando temas -> crie um @import com a referencia do seu arquivo css @import url('themes/seu_arquivo.css') */
 @import url('themes/default.css');
 @import url('themes/love.css');
+@import url('themes/beach.css');
 
 
 /* definindo centralização da calculadora conforme o display */
