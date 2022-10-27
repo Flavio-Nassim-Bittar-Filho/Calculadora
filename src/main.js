@@ -13,8 +13,7 @@ const themes = [
     ['t1', 'Love'],
     ['t2', 'Christmas 🎅'],
     ['t3', 'Minecraft']
-]
-
+    
 // define o maximo de temas (Não Mexer)
 theme.max = themes.length - 1 
 
