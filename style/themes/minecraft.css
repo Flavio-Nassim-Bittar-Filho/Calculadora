@@ -1,0 +1,106 @@
+/* para criar um novo TEMA basta fazer uma copia desse documento e alterar o nome das classes e suas propriedades ! */
+/* cada classe é representada pela qtd de temas, ex: se tem 5 temas, a classe do primeiro tema sera t1, a do segundo sera t2 e assim sucessivamente */
+/* t2 é representado pelo tema DEFAULT */
+/* por favor tente manter o padrão de t1,t2,t3,tn ...  nas classes, pois assim fica muito mais facil de varias pessoas colaborarem com o projeto */
+/* pode colocar o AUTOR do tema, caso queira ! */
+
+
+/* TEMA: MINECRAFT */
+/* AUTOR: RAFAEL AUGUSTO DE PAULA MORA */
+/* GITHUB: https://github.com/rafaelAugust0 */
+
+/* importando fonte */
+@font-face {
+    font-family: Minecraft;
+    src: url('../../font/Minecraft.ttf');
+}
+
+/* cor de fundo da calculadora */
+body.t4{
+    background-image: url('../../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Minecraft', sans-serif;
+}
+
+
+
+/* cor da tela de equação */
+input[type = 'text'].t4{
+    border: 10px solid #110e18;
+    background-image: url('../../img/nether.gif');
+    background-position: center;
+    border-radius: 15px;
+    color: #fff;
+}
+
+
+/* cor de fundo da barra de tema */
+input[type = 'range'].t4{
+    background-color: #15441c;
+    border-radius: 10px;
+    box-shadow: 0 3px #000000;
+}
+
+/* cor do botão da barra de tema */
+input[type = 'range'].t4::-webkit-slider-thumb {
+    background: rgb(59, 3, 3);
+    border-radius: 10px;
+}
+
+
+/* cor dos botoes */
+button.t4{
+    color: #000000;
+    border: 2px solid #fff;
+    background-image: url('../../img/stone.png');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 3px #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+button.t4:hover {
+    background-image: url('../../img/cobblestone.png');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+
+/* cor do titulo */
+h1.t4{
+    color: #fff;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+
+/* cor expecifica para botoes especificos */
+button[value=c].t4{
+    background: rgb(59, 3, 3) url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+    transition: none;
+}
+
+button[value=c].t4:hover {
+    background: rgb(59, 3, 3) url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value='='].t4{
+    background-image: url('../../img/workbench.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 80%;
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+}
+
+button[value='='].t4:hover {
+    background-image: url('../../img/workbench-opened.png');
+    background-position: center;
+    background-size: cover;
+}
