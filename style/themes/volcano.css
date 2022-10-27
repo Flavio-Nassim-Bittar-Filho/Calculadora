@@ -1,0 +1,91 @@
+/* para criar um novo TEMA basta fazer uma copia desse documento e alterar o nome das classes e suas propriedades ! */
+/* cada classe é representada pela qtd de temas, ex: se tem 5 temas, a classe do primeiro tema sera t1, a do segundo sera t2 e assim sucessivamente */
+/* t0 é representado pelo tema DEFAULT */
+/* por favor tente manter o padrão de t1,t2,t3,tn ...  nas classes, pois assim fica muito mais facil de varias pessoas colaborarem com o projeto */
+/* pode colocar o AUTOR do tema, caso queira ! */
+
+/* TEMA: VOLCANO */
+/* AUTOR: MATEUS MATTOS */
+
+/* importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+/* cor de fundo da calculadora */
+body.t5 {
+    background-image: url('../../img/volcano.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* cor da tela de equação */
+input[type = 'text'].t5 {
+    border: 2px solid #000000;
+    background: transparent;
+    border-radius: 15px;
+    font-family: 'Luckiest Guy';
+}
+
+
+/* cor de fundo da barra de tema */
+input[type = 'range'].t5 {
+    background: #000000;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+/* cor do botão da barra de tema */
+input[type = 'range'].t5::-webkit-slider-thumb {
+    background: #ffdd00;
+    border-radius: 10px;
+}
+
+
+/* cor dos botoes */
+button.t5 {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 2px 2px rgb(0, 0, 0);
+    border: 2px solid #000000;
+    background: transparent;
+    background-image: url('../../img/buttonvolcano.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 3px #000000;
+    border-radius: 5px;
+    font-family: 'Luckiest Guy';
+}
+
+button.t5:hover {
+    opacity: 0.7;
+}
+
+
+/* cor do titulo */
+h1.t5 {
+    color: #dadada;
+    font-family: 'Luckiest Guy';
+    font-size: 40px;
+}
+
+
+/* cor expecifica para botoes especificos */
+button[value=c].t5 {
+    background: #e70000 url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value=c].t5:hover {
+    background: #b50000 url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value='='].t5 {
+    background: #ffdd00;
+}
+
+button[value='='].t5:hover {
+    background: #d5c002;
+}
