@@ -1,0 +1,166 @@
+/* importando rezetes */
+@import url('normalize.css');
+@import url('reset.css');
+
+/* importando temas -> crie um @import com a referencia do seu arquivo css @import url('themes/seu_arquivo.css') */
+@import url('themes/default.css');
+@import url('themes/love.css');
+@import url('themes/christmas.css');
+@import url('themes/t3_classic.css');
+@import url('themes/minecraft.css');
+
+
+/* definindo centralização da calculadora conforme o display */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* posicionamento dos elementos na calculadora */
+.calculator {
+    width: 90%;
+    height: 90%;
+    max-width: 540px;
+    display: grid;
+    gap: 1%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas: 'bt   bt    t    t'
+                         'sc  sc   sc  sc'
+                         'sc  sc   sc  sc'
+                         'ca  c    div mul'
+                         'b7  b8   b9  sub'
+                         'b4  b5   b6  sum'
+                         'b1  b2   b3  equ'
+                         'b0  b0   dot equ';
+}
+
+
+/* propriedades da tela */
+.screen {
+    grid-area: sc;
+    appearance: none;
+    cursor: unset;
+    text-align: end;
+    font-size: clamp(2.5rem,10vw,3rem);
+}
+
+.screen:focus {
+    outline: none;
+}
+
+
+/* propriedades botão tema */
+.theme {
+    width: 70%;
+    grid-area: bt;
+    justify-self: center;
+    align-self: center;
+    appearance: none;
+}
+
+.theme::-webkit-slider-thumb {
+    appearance: none;
+    width: 50%;
+    height: 20px;
+}
+
+
+/* propriedades dos botoes */
+button {
+    font-size: clamp(1.5rem,5vw,2rem);
+    padding: 0;
+    appearance: none;
+    position: relative;
+    transition: all .1s ease-in-out;
+}
+
+button:active {
+    top: 5px;
+    box-shadow: none;
+}
+
+/* propriedade do titulo */
+h1 {
+    grid-area: t;
+    justify-self: center;
+    align-self: center;
+    font-size: clamp(2rem,8vw,3rem);
+}
+
+
+/* posicionamento de cada botão */
+button[value=ca] {
+    grid-area: ca;
+}
+
+button[value=c] {
+    grid-area: c;
+}
+
+button[value='9'] {
+    grid-area: b9;
+}
+
+button[value='8'] {
+    grid-area: b8;
+}
+
+button[value='7'] {
+    grid-area: b7;
+}
+
+button[value='6'] {
+    grid-area: b6;
+}
+
+button[value='5'] {
+    grid-area: b5;
+}
+
+button[value='4'] {
+    grid-area: b4;
+}
+
+button[value='3'] {
+    grid-area: b3;
+}
+
+button[value='2'] {
+    grid-area: b2;
+}
+
+button[value='1'] {
+    grid-area: b1;
+}
+
+button[value='0'] {
+    grid-area: b0;
+}
+
+button[value='='] {
+    grid-area: equ;
+}
+
+button[value='+'] {
+    grid-area: sum;
+}
+
+button[value='-'] {
+    grid-area: sub;
+}
+
+button[value='*'] {
+    grid-area: mul;
+}
+
+button[value='/'] {
+    grid-area: div;
+}
+
+button[value='.'] {
+    grid-area: dot;
+}

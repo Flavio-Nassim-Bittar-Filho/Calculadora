@@ -1,0 +1,90 @@
+/* para criar um novo TEMA basta fazer uma copia desse documento e alterar o nome das classes e suas propriedades ! */
+/* cada classe é representada pela qtd de temas, ex: se tem 5 temas, a classe do primeiro tema sera t1, a do segundo sera t2 e assim sucessivamente */
+/* t2é representado pelo tema DEFAULT */
+/* por favor tente manter o padrão de t1,t2,t3,tn ...  nas classes, pois assim fica muito mais facil de varias pessoas colaborarem com o projeto */
+/* pode colocar o AUTOR do tema, caso queira ! */
+
+
+/* TEMA: CHRISTMAS */
+/* AUTOR: RAFAEL AUGUSTO DE PAULA MORA */
+/* GITHUB: https://github.com/rafaelAugust0 */
+
+/* importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
+:root {
+    font-family: 'Mountains of Christmas', cursive;
+}
+
+/* cor de fundo da calculadora */
+body.t2{
+    background-image: url('../../img/christmas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* cor da tela de equação */
+input[type = 'text'].t2{
+    border: 2px solid #000000;
+    background-image: linear-gradient(#74D680, #FF7878);
+    border-radius: 15px;
+}
+
+
+/* cor de fundo da barra de tema */
+input[type = 'range'].t2{
+    background-image: linear-gradient(#74D680, #FF7878);
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+/* cor do botão da barra de tema */
+input[type = 'range'].t2::-webkit-slider-thumb {
+    background: #E40A2D;
+    border-radius: 10px;
+}
+
+
+/* cor dos botoes */
+button.t2{
+    color: #ffffff;
+    border: 2px solid #fff;
+    background-color: #15441c;
+    box-shadow: 0 3px #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.t2:hover {
+    background: #E40A2D;;
+}
+
+
+/* cor do titulo */
+h1.t2{
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+
+/* cor expecifica para botoes especificos */
+button[value=c].t2{
+    background: #E40A2D url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value=c].t2:hover {
+    background: #15441c url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value='='].t2{
+    background: #E40A2D;
+}
+
+button[value='='].t2:hover {
+    background: #15441c;
+}

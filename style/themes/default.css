@@ -1,0 +1,81 @@
+/* para criar um novo TEMA basta fazer uma copia desse documento e alterar o nome das classes e suas propriedades ! */
+/* cada classe é representada pela qtd de temas, ex: se tem 5 temas, a classe do primeiro tema sera t1, a do segundo sera t2 e assim sucessivamente */
+/* t0 é representado pelo tema DEFAULT */
+/* por favor tente manter o padrão de t1,t2,t3,tn ...  nas classes, pois assim fica muito mais facil de varias pessoas colaborarem com o projeto */
+/* pode colocar o AUTOR do tema, caso queira ! */
+
+/* AUTOR: FLÁVIO NASSIM BITTAR FILHO */
+
+/* importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+
+
+/* cor de fundo da calculadora */
+body.t0 {
+    background: #1e1e1e;
+}
+
+
+/* cor da tela de equação */
+input[type = 'text'].t0 {
+    border: 2px solid #000000;
+    background: #61ac52;
+    border-radius: 15px;
+    font-family: 'Quantico', sans-serif;
+}
+
+
+/* cor de fundo da barra de tema */
+input[type = 'range'].t0 {
+    background: #7a7a7a;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+/* cor do botão da barra de tema */
+input[type = 'range'].t0::-webkit-slider-thumb {
+    background: #dadada;
+    border-radius: 10px;
+}
+
+
+/* cor dos botoes */
+button.t0 {
+    color: #ffffff;
+    border: 2px solid #000000;
+    background-color: #7a7a7a;
+    box-shadow: 0 3px #000000;
+    border-radius: 5px;
+    font-family: 'Quantico', sans-serif
+}
+
+button.t0:hover {
+    background: #474747;
+}
+
+
+/* cor do titulo */
+h1.t0 {
+    color: #dadada;
+    font-family: 'Quantico', sans-serif;
+}
+
+
+/* cor expecifica para botoes especificos */
+button[value=c].t0 {
+    background: #7a7a7a url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value=c].t0:hover {
+    background: #474747 url('../../img/arrow_back.svg') center center no-repeat;
+    background-size: 40%;
+}
+
+button[value='='].t0 {
+    background: #d82222;
+}
+
+button[value='='].t0:hover {
+    background: #a81a1a;
+}
